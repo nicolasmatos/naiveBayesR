@@ -13,7 +13,6 @@ Considerando os dados presentes no arquivo classificação_Q3.csv, pede-se:
 
 <h1> Instruções </h1>
 
-                                        <img src="https://portal.fbuni.edu.br/images/logo-login.png"/>
 
                                         Disciplina: Inteligência Artificial
                                         Professor: Aragão Junior
@@ -24,39 +23,30 @@ Considerando os dados presentes no arquivo classificação_Q3.csv, pede-se:
 Trabalho Naive Bayes
 
 1.	Requisitos: 
+- Instalar o R-Studio
 
-•	Instalar o R-Studio
-
-•	Instalar o pacote: dplyr
+- Instalar o pacote: dplyr
 
 
 2.	O código é composto por 3 funções:
 
-•	Naive: Onde foi implementado o algoritmo para classificação
+- Naive: Onde foi implementado o algoritmo para classificação
 
-•	Processa: Que retorna uma lista com as taxas min, max e média de acertos após 30 rodas com proporção 80/20 e também retorna as taxas médias de acerto por classe.
+- Processa: Que retorna uma lista com as taxas min, max e média de acertos após 30 rodas com proporção 80/20 e também retorna as taxas médias de acerto por classe.
 
-•	Processa2: Onde treina da proporção 20/80 até a 80/20 e retorna um gráfico mostrando a taxa média para cada proporção.
+- Processa2: Onde treina da proporção 20/80 até a 80/20 e retorna um gráfico mostrando a taxa média para cada proporção.
 
 
 3.	Passo a passo:
 
-•	Carrega o arquivo com as funções:
+- Carrega o arquivo com as funções: source("C:\\Caminho até o arquivo\\naive.r")
 
-o	source("C:\\Caminho até o arquivo\\naive.r")
+- Carrega o arquivo de dados, que alteramos um pouco a estrutura: dataset = as.matrix(read.table("C:\\Caminho até o arquivo\\trabalho.dat", header=T))
 
-•	Carrega o arquivo de dados, que alteramos um pouco a estrutura
-
-o	dataset = as.matrix(read.table("C:\\Caminho até o arquivo\\trabalho.dat", header=T))
-
-•	Chama a função processa e passa a variável onde carregou os dados por parâmetro:
-
-o	processa(dataset)
+- Chama a função processa e passa a variável onde carregou os dados por parâmetro: processa(dataset)
                                         <img src="http://i66.tinypic.com/24bnguv.png"/>
  
-•	Chama a função processa2 e passa a variável onde carregou os dados por parâmetro, OBS: Nos nossos computadores demorou um pouco até retornar o resultado para essa operação.
-
-o	processa2(dataset)
+- Chama a função processa2 e passa a variável onde carregou os dados por parâmetro, OBS: Nos nossos computadores demorou um pouco até retornar o resultado para essa operação: processa2(dataset)
                                         <img src="http://i66.tinypic.com/2rdetef.jpg"/>
 
                                         #bayes #naivebayes #algoritmos #ia 
